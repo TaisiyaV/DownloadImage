@@ -13,7 +13,35 @@
 		5721D8B824FCCC9A00CBA49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5721D8B624FCCC9A00CBA49B /* Main.storyboard */; };
 		5721D8BA24FCCC9C00CBA49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5721D8B924FCCC9C00CBA49B /* Assets.xcassets */; };
 		5721D8BD24FCCC9C00CBA49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5721D8BB24FCCC9C00CBA49B /* LaunchScreen.storyboard */; };
+		5721D8CB24FCCCD900CBA49B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5721D8CA24FCCCD900CBA49B /* Media.xcassets */; };
+		5721D8CD24FCCCD900CBA49B /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721D8CC24FCCCD900CBA49B /* ActionViewController.swift */; };
+		5721D8D024FCCCD900CBA49B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5721D8CE24FCCCD900CBA49B /* MainInterface.storyboard */; };
+		5721D8D424FCCCD900CBA49B /* DownloadVideo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5721D8C824FCCCD900CBA49B /* DownloadVideo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5721D8D224FCCCD900CBA49B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5721D8A524FCCC9A00CBA49B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5721D8C724FCCCD900CBA49B;
+			remoteInfo = DownloadVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5721D8D824FCCCD900CBA49B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5721D8D424FCCCD900CBA49B /* DownloadVideo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5721D8AD24FCCC9A00CBA49B /* Download.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Download.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,22 @@
 		5721D8B924FCCC9C00CBA49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5721D8BC24FCCC9C00CBA49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5721D8BE24FCCC9C00CBA49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5721D8C824FCCCD900CBA49B /* DownloadVideo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DownloadVideo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5721D8CA24FCCCD900CBA49B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		5721D8CC24FCCCD900CBA49B /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		5721D8CF24FCCCD900CBA49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5721D8D124FCCCD900CBA49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5721D8AA24FCCC9A00CBA49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5721D8C524FCCCD900CBA49B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5721D8AF24FCCC9A00CBA49B /* Download */,
+				5721D8C924FCCCD900CBA49B /* DownloadVideo */,
 				5721D8AE24FCCC9A00CBA49B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5721D8AD24FCCC9A00CBA49B /* Download.app */,
+				5721D8C824FCCCD900CBA49B /* DownloadVideo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +109,17 @@
 			path = Download;
 			sourceTree = "<group>";
 		};
+		5721D8C924FCCCD900CBA49B /* DownloadVideo */ = {
+			isa = PBXGroup;
+			children = (
+				5721D8CA24FCCCD900CBA49B /* Media.xcassets */,
+				5721D8CC24FCCCD900CBA49B /* ActionViewController.swift */,
+				5721D8CE24FCCCD900CBA49B /* MainInterface.storyboard */,
+				5721D8D124FCCCD900CBA49B /* Info.plist */,
+			);
+			path = DownloadVideo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +130,34 @@
 				5721D8A924FCCC9A00CBA49B /* Sources */,
 				5721D8AA24FCCC9A00CBA49B /* Frameworks */,
 				5721D8AB24FCCC9A00CBA49B /* Resources */,
+				5721D8D824FCCCD900CBA49B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5721D8D324FCCCD900CBA49B /* PBXTargetDependency */,
 			);
 			name = Download;
 			productName = Download;
 			productReference = 5721D8AD24FCCC9A00CBA49B /* Download.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5721D8C724FCCCD900CBA49B /* DownloadVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5721D8D524FCCCD900CBA49B /* Build configuration list for PBXNativeTarget "DownloadVideo" */;
+			buildPhases = (
+				5721D8C424FCCCD900CBA49B /* Sources */,
+				5721D8C524FCCCD900CBA49B /* Frameworks */,
+				5721D8C624FCCCD900CBA49B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloadVideo;
+			productName = DownloadVideo;
+			productReference = 5721D8C824FCCCD900CBA49B /* DownloadVideo.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +170,9 @@
 				ORGANIZATIONNAME = "Taisiya V";
 				TargetAttributes = {
 					5721D8AC24FCCC9A00CBA49B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					5721D8C724FCCCD900CBA49B = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
@@ -116,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				5721D8AC24FCCC9A00CBA49B /* Download */,
+				5721D8C724FCCCD900CBA49B /* DownloadVideo */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +204,15 @@
 				5721D8BD24FCCC9C00CBA49B /* LaunchScreen.storyboard in Resources */,
 				5721D8BA24FCCC9C00CBA49B /* Assets.xcassets in Resources */,
 				5721D8B824FCCC9A00CBA49B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5721D8C624FCCCD900CBA49B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5721D8CB24FCCCD900CBA49B /* Media.xcassets in Resources */,
+				5721D8D024FCCCD900CBA49B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +229,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5721D8C424FCCCD900CBA49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5721D8CD24FCCCD900CBA49B /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5721D8D324FCCCD900CBA49B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5721D8C724FCCCD900CBA49B /* DownloadVideo */;
+			targetProxy = 5721D8D224FCCCD900CBA49B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5721D8B624FCCC9A00CBA49B /* Main.storyboard */ = {
@@ -161,6 +262,14 @@
 				5721D8BC24FCCC9C00CBA49B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5721D8CE24FCCCD900CBA49B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5721D8CF24FCCCD900CBA49B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +392,7 @@
 		5721D8C224FCCC9C00CBA49B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJ4RL6V3L;
@@ -301,6 +411,7 @@
 		5721D8C324FCCC9C00CBA49B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJ4RL6V3L;
@@ -311,6 +422,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.tasya.Download;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5721D8D624FCCCD900CBA49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CDJ4RL6V3L;
+				INFOPLIST_FILE = DownloadVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tasya.Download.DownloadVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5721D8D724FCCCD900CBA49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CDJ4RL6V3L;
+				INFOPLIST_FILE = DownloadVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.tasya.Download.DownloadVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +482,15 @@
 			buildConfigurations = (
 				5721D8C224FCCC9C00CBA49B /* Debug */,
 				5721D8C324FCCC9C00CBA49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5721D8D524FCCCD900CBA49B /* Build configuration list for PBXNativeTarget "DownloadVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5721D8D624FCCCD900CBA49B /* Debug */,
+				5721D8D724FCCCD900CBA49B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
