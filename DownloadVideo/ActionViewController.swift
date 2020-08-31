@@ -4,40 +4,29 @@ import UIKit
 import MobileCoreServices
 
 class ActionViewController: UIViewController {
-
     
-    @IBOutlet weak var image: UIImageView!
-    
+    var urlString: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var imageFound = false
-        for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
-            for provider in item.attachments! {
-                
-                if provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
-
-                    weak var weakImageView = self.image
-                    provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil, completionHandler: { (imageURL, error) in
-                        OperationQueue.main.addOperation {
-                            if let strongImageView = weakImageView {
-                                if let imageURL = imageURL as? URL {
-                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
-                                }
-                            }
-                        }
-                    })
-                    
-                    imageFound = true
-                    break
-                }
-            }
-            
-            if (imageFound) {
-                break
+        let extensionItem = extensionContext?.inputItems[0] as! NSExtensionItem
+        let contentTypeURL = kUTTypeURL as String
+        
+        for attachment in extensionItem.attachments! {
+            if attachment.hasItemConformingToTypeIdentifier(kUTTypeURL as String) {
+                attachment.loadItem(forTypeIdentifier: contentTypeURL, options: nil, completionHandler: { (results, error) in
+                    let url = results as! URL?
+                    self.urlString = url!.absoluteString
+                })
             }
         }
+        
+        
+        let sharedDefaults = UserDefaults(suiteName: "group.ru.tasya.Download")
+        sharedDefaults?.set(urlString, forKey: "URL")
+
+
     }
 
     @IBAction func done() {

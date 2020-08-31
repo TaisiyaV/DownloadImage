@@ -1,20 +1,38 @@
-//
-//  ViewController.swift
-//  Download
-//
-//  Created by tasya on 31.08.2020.
-//  Copyright © 2020 Taisiya V. All rights reserved.
-//
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
-
+    
+    let tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        view.addSubview(tableView)
+        
+//        tableView.dataSource = self
+        
+        tableView.snp.makeConstraints { (m) in
+            m.top.leading.trailing.bottom.equalToSuperview()
+        }
+        
+        
+        
     }
-
+    
 
 }
 
+
+//extension ViewController: UITableViewDataSource {
+//    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//    
+//}

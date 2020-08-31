@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B6EA6097DCA2BA4DA22C26 /* Pods_Download.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D728773AA286426E9300E55 /* Pods_Download.framework */; };
 		5721D8B124FCCC9A00CBA49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721D8B024FCCC9A00CBA49B /* AppDelegate.swift */; };
 		5721D8B324FCCC9A00CBA49B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721D8B224FCCC9A00CBA49B /* SceneDelegate.swift */; };
 		5721D8B524FCCC9A00CBA49B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721D8B424FCCC9A00CBA49B /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 		5721D8CD24FCCCD900CBA49B /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721D8CC24FCCCD900CBA49B /* ActionViewController.swift */; };
 		5721D8D024FCCCD900CBA49B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5721D8CE24FCCCD900CBA49B /* MainInterface.storyboard */; };
 		5721D8D424FCCCD900CBA49B /* DownloadVideo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5721D8C824FCCCD900CBA49B /* DownloadVideo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5721D8F224FD313C00CBA49B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721D8F124FD313C00CBA49B /* TableViewCell.swift */; };
+		5721D8F424FD3C9400CBA49B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721D8F324FD3C9400CBA49B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3689B3E56063391585C60CBC /* Pods-Download.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Download.debug.xcconfig"; path = "Target Support Files/Pods-Download/Pods-Download.debug.xcconfig"; sourceTree = "<group>"; };
+		3DAE05CE4DB60FA465AAC6DA /* Pods-Download.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Download.release.xcconfig"; path = "Target Support Files/Pods-Download/Pods-Download.release.xcconfig"; sourceTree = "<group>"; };
 		5721D8AD24FCCC9A00CBA49B /* Download.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Download.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5721D8B024FCCC9A00CBA49B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5721D8B224FCCC9A00CBA49B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +62,11 @@
 		5721D8CC24FCCCD900CBA49B /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		5721D8CF24FCCCD900CBA49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5721D8D124FCCCD900CBA49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5721D8EF24FD182000CBA49B /* Download.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Download.entitlements; sourceTree = "<group>"; };
+		5721D8F024FD21A900CBA49B /* DownloadVideo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DownloadVideo.entitlements; sourceTree = "<group>"; };
+		5721D8F124FD313C00CBA49B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5721D8F324FD3C9400CBA49B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7D728773AA286426E9300E55 /* Pods_Download.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Download.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B6EA6097DCA2BA4DA22C26 /* Pods_Download.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,8 @@
 				5721D8AF24FCCC9A00CBA49B /* Download */,
 				5721D8C924FCCCD900CBA49B /* DownloadVideo */,
 				5721D8AE24FCCC9A00CBA49B /* Products */,
+				ED7A645238F904B608F9BD75 /* Pods */,
+				DBFB7865779FCEDBE5368E64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +111,12 @@
 		5721D8AF24FCCC9A00CBA49B /* Download */ = {
 			isa = PBXGroup;
 			children = (
+				5721D8EF24FD182000CBA49B /* Download.entitlements */,
 				5721D8B024FCCC9A00CBA49B /* AppDelegate.swift */,
 				5721D8B224FCCC9A00CBA49B /* SceneDelegate.swift */,
 				5721D8B424FCCC9A00CBA49B /* ViewController.swift */,
+				5721D8F124FD313C00CBA49B /* TableViewCell.swift */,
+				5721D8F324FD3C9400CBA49B /* DetailViewController.swift */,
 				5721D8B624FCCC9A00CBA49B /* Main.storyboard */,
 				5721D8B924FCCC9C00CBA49B /* Assets.xcassets */,
 				5721D8BB24FCCC9C00CBA49B /* LaunchScreen.storyboard */,
@@ -112,12 +128,30 @@
 		5721D8C924FCCCD900CBA49B /* DownloadVideo */ = {
 			isa = PBXGroup;
 			children = (
+				5721D8F024FD21A900CBA49B /* DownloadVideo.entitlements */,
 				5721D8CA24FCCCD900CBA49B /* Media.xcassets */,
 				5721D8CC24FCCCD900CBA49B /* ActionViewController.swift */,
 				5721D8CE24FCCCD900CBA49B /* MainInterface.storyboard */,
 				5721D8D124FCCCD900CBA49B /* Info.plist */,
 			);
 			path = DownloadVideo;
+			sourceTree = "<group>";
+		};
+		DBFB7865779FCEDBE5368E64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D728773AA286426E9300E55 /* Pods_Download.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED7A645238F904B608F9BD75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3689B3E56063391585C60CBC /* Pods-Download.debug.xcconfig */,
+				3DAE05CE4DB60FA465AAC6DA /* Pods-Download.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,10 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5721D8C124FCCC9C00CBA49B /* Build configuration list for PBXNativeTarget "Download" */;
 			buildPhases = (
+				84AFE374A9A2AEE828AA849E /* [CP] Check Pods Manifest.lock */,
 				5721D8A924FCCC9A00CBA49B /* Sources */,
 				5721D8AA24FCCC9A00CBA49B /* Frameworks */,
 				5721D8AB24FCCC9A00CBA49B /* Resources */,
 				5721D8D824FCCCD900CBA49B /* Embed App Extensions */,
+				5CBBC53553CE62B98C0DB8CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,12 +254,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CBBC53553CE62B98C0DB8CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Download/Pods-Download-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Download/Pods-Download-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Download/Pods-Download-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84AFE374A9A2AEE828AA849E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Download-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5721D8A924FCCC9A00CBA49B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5721D8B524FCCC9A00CBA49B /* ViewController.swift in Sources */,
+				5721D8F224FD313C00CBA49B /* TableViewCell.swift in Sources */,
+				5721D8F424FD3C9400CBA49B /* DetailViewController.swift in Sources */,
 				5721D8B124FCCC9A00CBA49B /* AppDelegate.swift in Sources */,
 				5721D8B324FCCC9A00CBA49B /* SceneDelegate.swift in Sources */,
 			);
@@ -391,9 +471,11 @@
 		};
 		5721D8C224FCCC9C00CBA49B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3689B3E56063391585C60CBC /* Pods-Download.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Download/Download.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJ4RL6V3L;
 				INFOPLIST_FILE = Download/Info.plist;
@@ -410,9 +492,11 @@
 		};
 		5721D8C324FCCC9C00CBA49B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAE05CE4DB60FA465AAC6DA /* Pods-Download.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Download/Download.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJ4RL6V3L;
 				INFOPLIST_FILE = Download/Info.plist;
@@ -430,6 +514,7 @@
 		5721D8D624FCCCD900CBA49B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DownloadVideo/DownloadVideo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJ4RL6V3L;
 				INFOPLIST_FILE = DownloadVideo/Info.plist;
@@ -449,6 +534,7 @@
 		5721D8D724FCCCD900CBA49B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DownloadVideo/DownloadVideo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJ4RL6V3L;
 				INFOPLIST_FILE = DownloadVideo/Info.plist;
