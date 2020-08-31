@@ -17,6 +17,8 @@ class ViewController: UIViewController {
             m.top.leading.trailing.bottom.equalToSuperview()
         }
         
+        let sharedDefaults = UserDefaults(suiteName: "group.ru.tasya.Download")
+        print(sharedDefaults?.object(forKey: "URL"))
         
         
     }
